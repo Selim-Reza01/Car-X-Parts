@@ -7,7 +7,7 @@ Image Renaming Steps:
 3. Download the image folder
 
 4. Download part number, brand, product name for specific brand from database. Make sure all are in lowercase and every space replaced with '-'. Use this query: 
-select distinct LOWER(part_number), LOWER(REPLACE(brand, ' ', '-')), LOWER(REPLACE(product_name, ' ', '-')) from parts where brand = '';
+select distinct LOWER(part_number), LOWER(REPLACE(brand, ' ', '-')), LOWER(REPLACE(product_name, ' ', '-')) from parts where brand = '{brand_name}';
 
 5. Change all image name into lowercase
 
